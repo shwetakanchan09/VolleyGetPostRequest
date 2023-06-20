@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.shweta.volleygetpostrequest.model.PostModel" />
+    </data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/curve">
+    <LinearLayout
+        android:id="@+id/llName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="First Name"
+        android:textSize="18sp"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:padding="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Shweta k"
+        android:text="@{model.name}"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:padding="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:textSize="18sp"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:padding="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@{model.age}"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:padding="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mail"
+        android:textSize="18sp"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:padding="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@{model.email}"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:padding="10dp" />
+    </LinearLayout>
+</LinearLayout>
+</layout>
